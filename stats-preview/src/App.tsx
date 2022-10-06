@@ -1,9 +1,10 @@
 import './App.scss'
+import {ParentFrame} from './Components/ParentFrame'
 
 function App() {
   return (
     <>
-      <h1>Foo</h1>
+      <ParentFrame />
     </>
   );
 }

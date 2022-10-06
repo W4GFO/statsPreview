@@ -1,0 +1,9 @@
+@import './AllComponentsStyles.scss';
+
+.parentframe {
+	width: 90vw;
+	//height: 100vh;
+	
+	border-radius: 40px;
+	background-color: $PrimaryDarkDesaturatedBlue;
+}

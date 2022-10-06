@@ -1,0 +1,11 @@
+@import './Components/AllComponentsStyles.scss';
+
+div#root {
+	min-width: 100vw;
+	min-height: 100vh;
+	background-color: $PrimaryVeryDarkBlue;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
