@@ -1,2 +1,0 @@
-# statsPreview
-Project from FrontendMentor
