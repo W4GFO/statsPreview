@@ -29,15 +29,15 @@
 	color: $NeutralSlightlyTransparentGrey;
 }
 
-.numdesc {
+li p {
 	font-size: 1.6rem;
 	color: $NeutralWhite;
 	font-weight: $FontHeavy;
 	font-family: "Lexend Deca", "Times New Roman", Times, serif;
 }
 
-.subdesc {
-	padding-bottom: 24px;
+.datapoint {
+	padding-bottom: 16px;
 }
 
 .note-emphasis {
@@ -60,8 +60,12 @@
 		margin-right: 75px;
 	}
 
-	.pointitems li  {
+	li  {
 		display: inline-block;
 		background-color: orange;
+	}
+
+	.datapoint {
+		padding-bottom: 0px;
 	}
 }

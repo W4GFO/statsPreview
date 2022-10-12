@@ -13,12 +13,18 @@ export const ContentGroupingFrame = ({className}: ContentGroupingFrameProps) => 
 				<p className='center-message'>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
 
 				<ul className='pointitems'>
-					<li className='numdesc'>10k+</li> 
-					<li className='subdesc'>companies</li>
-					<li className='numdesc'>314</li> 
-					<li className='subdesc'>templates</li>
-					<li className='numdesc'>12m+</li> 
-					<li>queries</li>
+					<li className='datapoint'>
+						<p>10k</p>
+						<span>companies</span>
+					</li> 
+					<li className='datapoint'>
+						<p>314</p>
+						<span>templates</span>
+					</li>
+					<li>
+						<p>12M+</p>
+						<span>queries</span>
+					</li> 
 				</ul>
 			</div>
 		</>
