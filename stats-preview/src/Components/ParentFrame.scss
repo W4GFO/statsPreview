@@ -1,9 +1,58 @@
 @import './AllComponentsStyles.scss';
 
 .parentframe {
-	width: 90vw;
-	//height: 100vh;
-	
-	border-radius: 40px;
+	width: 90%;
+	max-width: 792px;
+
 	background-color: $PrimaryDarkDesaturatedBlue;
+
+	display: grid;
+	grid-template-areas: 
+		"groupimg"
+		"content";
+
+	justify-items: stretch;
+
+	border-radius: $BorderRadius $BorderRadius $BorderRadius $BorderRadius;
+}
+
+.imgframe {
+	height: 250px;
+	grid-area: groupimg;
+	background-color: white;
+	border-radius: $BorderRadius $BorderRadius 0px 0px;
+}
+
+.contentframe {
+	grid-area: content;
+	padding-bottom: 40px;
+
+	background-color: $PrimaryDarkDesaturatedBlue;
+	border-radius: 0px 0px $BorderRadius $BorderRadius;
+}
+
+@media screen and (min-width:1101) {
+	.parentframe {
+		width: 60%;
+		height: 20%;
+		max-height: 240px;
+	}
+}
+
+@media screen and (min-width:$MinBreakPointValue) {
+	.parentframe{
+		max-height: 420px;
+		grid-template-areas: 
+			"content groupimg";
+	}
+
+	.contentframe{
+		border-radius: $BorderRadius 0px 0px $BorderRadius;
+	}
+
+	.imgframe {
+		width: 40vw;
+		height: 100%;
+		border-radius: 0px $BorderRadius $BorderRadius 0px;
+	}
 }
