@@ -8,24 +8,26 @@ export const ContentGroupingFrame = ({className}: ContentGroupingFrameProps) => 
 	return (
 		<>
 			<div className={className}>
-				<p>Get <span className='note-emphasis'>insights</span> that help your business grow.</p>
+				<p className='top-title'>Get <span className='note-emphasis'>insights</span> that help your business grow.</p>
 
 				<p className='center-message'>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
 
-				<ul className='pointitems'>
-					<li className='datapoint'>
+				<div className='stats-info'>
+					<section className='stat-item'>
 						<p>10k</p>
 						<span>companies</span>
-					</li> 
-					<li className='datapoint'>
+					</section>
+
+					<section className='stat-item'>
 						<p>314</p>
 						<span>templates</span>
-					</li>
-					<li>
+					</section>
+
+					<section className='stat-item last-item'>
 						<p>12M+</p>
 						<span>queries</span>
-					</li> 
-				</ul>
+					</section>
+				</div>
 			</div>
 		</>
 	)

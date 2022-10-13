@@ -6,48 +6,62 @@
 	justify-items: center;
 }
 
-.contentframe p:first-of-type {
+.top-title{
 	font-size: 1.8rem;
-	font-weight:bolder;
+	font-weight: bolder;
 	color: $NeutralWhite;
 	margin-bottom: -10px;
 }
 
-.contentframe p {
+.center-message {
+	font-size: 1.2rem;
 	margin-left: 10px;
 	margin-right: 10px;
 	padding-bottom: 10px;
+
+	line-height: 1.6rem;
+
 	color: $NeutralSlightlyTransparentGrey;
 	font-family: Inter, "Times New Roman", Times, serif;
-}
-
-.contentframe ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-
-	color: $NeutralSlightlyTransparentGrey;
-}
-
-li p {
-	font-size: 1.6rem;
-	color: $NeutralWhite;
-	font-weight: $FontHeavy;
-	font-family: "Lexend Deca", "Times New Roman", Times, serif;
-}
-
-.datapoint {
-	padding-bottom: 16px;
 }
 
 .note-emphasis {
 	color: $PrimarySoftViolet;
 }
 
-.center-message {
-	line-height: 1.6rem;
-	font-size: 1.2rem;
+.stats-info	{
+	margin: 0;
+	padding: 0;
+	
+	display: inline-flex;
+	flex-direction: column;
+
+	align-items: center;
+	justify-content: center;
+
+	color: $NeutralSlightlyTransparentGrey;
 }
+
+.stat-item {
+	flex: 1 0 0;
+	font-family: "Lexend Deca", "Times New Roman", Times, serif;
+
+	margin-bottom: 40px;
+}
+
+.stat-item p {
+	font-size: 1.9em;
+	font-weight: bolder;
+	color: $NeutralWhite;
+
+	margin: 0px;
+	padding: 0px;
+}
+
+.last-item {
+	margin-bottom: 0px;
+}
+
 
 @media screen and (min-width:$MinBreakPointValue) {
 	.contentframe {
@@ -60,12 +74,11 @@ li p {
 		margin-right: 75px;
 	}
 
-	li  {
-		display: inline-block;
-		background-color: orange;
+	.stats-info{
+		flex-direction: row;
 	}
 
-	.datapoint {
-		padding-bottom: 0px;
+	.stat-item {
+		margin-bottom: 0px;
 	}
 }
