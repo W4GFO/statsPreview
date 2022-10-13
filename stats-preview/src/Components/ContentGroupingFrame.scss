@@ -13,6 +13,11 @@
 	margin-bottom: -10px;
 }
 
+/* This is the purple coloring for the word 'insights' */
+.note-emphasis {
+	color: $PrimarySoftViolet;
+}
+
 .center-message {
 	font-size: 1.2rem;
 	margin-left: 10px;
@@ -23,10 +28,6 @@
 
 	color: $NeutralSlightlyTransparentGrey;
 	font-family: Inter, "Times New Roman", Times, serif;
-}
-
-.note-emphasis {
-	color: $PrimarySoftViolet;
 }
 
 .stats-info	{
@@ -62,7 +63,6 @@
 	margin-bottom: 0px;
 }
 
-
 @media screen and (min-width:$MinBreakPointValue) {
 	.contentframe {
 		background-color: #C2C2C2;
@@ -70,7 +70,7 @@
 
 	.contentframe p {
 		text-align: start;
-		margin-left: 75px;
+		margin-left: 55px;
 		margin-right: 75px;
 	}
 

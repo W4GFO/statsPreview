@@ -5,6 +5,10 @@ import {ContentGroupingFrame} from './ContentGroupingFrame'
 type ParentFrameProps = {}
 
 export const ParentFrame = (props: ParentFrameProps) => {
+
+	// let colorBG = getComputedStyle(document.getElementsByClassName.).getPropertyValue('min-height')
+	// console.log(colorBG)
+
 	return (
 		<>
 			<div className='parentframe'>
