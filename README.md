@@ -2,42 +2,49 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Specifically:
 
-In the project directory, you can run:
+```
+> npx create-react-app stats-preview --template typescript
+```
 
-### `npm start`
+## Architecture
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The project's structure is:
+	- Each tsx/react component file has a single corresponding scss which shares the same file name (except different extensions)
+	- There is a single style sheet where all the common styling variables are defined to be used by all component's style sheets
+	- The react components which make up the bulk of the UI are in the 'src/Components' directory
+	- The base react application structure files remain directly under the 'src' directory  
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+	The components structure is outlined at follows:
 
-### `npm test`
+	/src
+		- index.tsx
+		- App.tsx
+	
+	/src/Components
+		- ContentGroupingFrame //Contains the textual contents of the display
+		- GroupImageFrame      //Contains the primary image displayed in the project
+		- ParentFrame          //Is the container which holds the ContentGroupingFrame and GroupImageFrame
+
+### Additional npm installs
+
+Included the SASS Node package
+
+	```
+	> npm install sass
+	```
+
+### Current Issues
+
+I'm not certain if the issue is in the GroupImageFrame, ContentGroupingFrame, ParentFrame, or at the 'app.scss' styling.
+
+In desktop, as the size expands betwee about 750px and 1200px the desktop resizing gets really messed up.  I have tried 
+about everything I can think of but it starts to feel very wrong everytime I add in another margin, width, or padding parameter.
+Essentially, at this point I'm just guessing.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
