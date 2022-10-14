@@ -32,9 +32,9 @@ The components structure is outlined at follows:
 
 Included the SASS Node package
 
-	```
-	> npm install sass
-	```
+```
+> npm install sass
+```
 
 ### Current Issues
 
