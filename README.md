@@ -38,14 +38,34 @@ Included the SASS Node package
 
 ### Current Issues
 
-I'm not certain if the issue is in the GroupImageFrame, ContentGroupingFrame, ParentFrame, or at the 'app.scss' styling.
+I'm not certain why the following resolved the text side of the content from overflowing when in desktop:
 
-In desktop, as the size expands betwee about 750px and 1200px the desktop resizing gets really messed up.  I have tried 
-about everything I can think of but it starts to feel very wrong everytime I add in another margin, width, or padding parameter.
-Essentially, at this point I'm just guessing.
+Line 47: ParentFrame.scss
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+padding-right: 500px;
+```
+
+BUT, the below will fail miserably...
+
+```
+margin-right: 500px;
+```
+
+---
+
+Also, why the following works great (Line 8: GroupImageFrame.scss):
+
+```
+	height: 100%;
+```
+
+But the following (original code) does not:
+
+```
+	height: auto;
+```
+
 
 ## Learn More
 
