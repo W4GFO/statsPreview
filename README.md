@@ -15,6 +15,8 @@ The project's structure is:
 - There is a single style sheet where all the common styling variables are defined to be used by all component's style sheets
 - The react components which make up the bulk of the UI are in the 'src/Components' directory
 - The base react application structure files remain directly under the 'src' directory  
+
+
 The components structure is outlined at follows:
 
 	/src
