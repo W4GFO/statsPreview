@@ -64,15 +64,12 @@
 }
 
 @media screen and (min-width:$MinBreakPointValue) {
-	.contentframe {
-		background-color: #C2C2C2;
-	}
-
 	.contentframe p {
 		text-align: start;
 		margin-left: 55px;
 		margin-right: 75px;
 	}
+
 
 	.stats-info{
 		flex-direction: row;

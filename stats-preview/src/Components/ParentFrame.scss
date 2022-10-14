@@ -4,14 +4,11 @@
 	flex: 1 1 1;//This is the centered content area within the primary dark background full frame
 
 	width: 90%;
-	min-width: 340px;//Things go haywire below this!!!!
 
 	display: grid;
 	grid-template-areas: 
 		"group-image"
 		"content-frame";
-
-//	justify-items: stretch;
 
 	//Trivial properties - Always remain the same regardless of screen size.
 	background-color: $PrimaryDarkDesaturatedBlue;
@@ -38,20 +35,16 @@
 		width: 90vw;
 		overflow: hidden;
 		max-width: $MaxPrimaryViewWidth;
-		min-width: calc($MinBreakPointValue - 48px);
-		
-		max-height: 420px;
 
 		grid-template-areas: 
 			"content-frame group-image";
 
 		grid-template-columns: 1fr 1fr;
-
-		border: 2px solid chartreuse; //--TEST
 	}
 
 	.contentframe{
 		overflow: hidden;
+		padding-right: 500px;
 		border-radius: $BorderRadius 0px 0px $BorderRadius;
 	}
 
