@@ -1,0 +1,25 @@
+@import 'AllComponentsStyles.scss';
+
+.imgframe {
+	overflow: hidden; //Prevents the transparent overlay from overflowing the lower portion of the image frame.
+}
+
+.imgframe img {
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.relativewrap {
+	position: relative;
+}
+
+.color-overlay {
+	width: 100%;
+	height: 100%;
+	background-color: $PrimarySoftVioletTransparent;
+
+	top:0;
+	left:0;
+	position: absolute;
+}

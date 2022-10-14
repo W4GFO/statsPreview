@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca');
+
+$PrimaryVeryDarkBlue:hsl(233, 47%, 7%); //Main background
+$PrimaryDarkDesaturatedBlue:hsl(244, 38%, 16%); //Card background
+$PrimarySoftViolet:hsl(277, 64%, 61%); //Accent
+$PrimarySoftVioletTransparent:hsla(277, 64%, 61%, 0.82); //Accent
+
+$NeutralWhite:hsl(0, 0%, 100%); //Main heading, stats
+$NeutralSlightlyTransparentWhite:hsla(0, 0%, 100%, 0.75); //Main paragraph
+$NeutralSlightlyTransparentGrey:hsla(0, 0%, 100%, 0.6); //Stat headings
+
+$FontLight:400;
+$FontMedium:550;
+$FontHeavy:700;
+
+$DesktopMargin:70px;
+
+$MinMargin:4px;
+$InputTextLeadingOffset:20px;
+
+$InputButtonWidth:65px;
+$InputElementsHeight:40px;
+
+$MinBreakPointValue:701px;
+$MaxPrimaryViewWidth:1020px;
+
+$BorderRadius:10px;

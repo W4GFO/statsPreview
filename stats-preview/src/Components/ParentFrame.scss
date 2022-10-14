@@ -1,0 +1,55 @@
+@import './AllComponentsStyles.scss';
+
+.parentframe {
+	flex: 1 1 1;//This is the centered content area within the primary dark background full frame
+
+	width: 90%;
+
+	display: grid;
+	grid-template-areas: 
+		"group-image"
+		"content-frame";
+
+	//Trivial properties - Always remain the same regardless of screen size.
+	background-color: $PrimaryDarkDesaturatedBlue;
+	border-radius: $BorderRadius $BorderRadius $BorderRadius $BorderRadius;
+}
+
+.imgframe {
+	height: 250px;
+	grid-area: group-image;
+	background-color: white;
+	border-radius: $BorderRadius $BorderRadius 0px 0px;
+}
+
+.contentframe {
+	grid-area: content-frame;
+	padding-bottom: 40px;
+
+	background-color: $PrimaryDarkDesaturatedBlue;
+	border-radius: 0px 0px $BorderRadius $BorderRadius;
+}
+
+@media screen and (min-width:$MinBreakPointValue) {
+	.parentframe{
+		width: 90vw;
+		overflow: hidden;
+		max-width: $MaxPrimaryViewWidth;
+
+		grid-template-areas: 
+			"content-frame group-image";
+
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.contentframe{
+		overflow: hidden;
+		padding-right: 500px;
+		border-radius: $BorderRadius 0px 0px $BorderRadius;
+	}
+
+	.imgframe {
+		height: 100%;
+		border-radius: 0px $BorderRadius $BorderRadius 0px;
+	}
+}
